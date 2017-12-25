@@ -2,9 +2,9 @@
 
 ## Introduction
 
-SharedApplication is a class used for sharing data between process, and many multi-process data structure can be derived from the SharedApplication class.
+SharedApplication is a class used for sharing data between processes, and design to be derived by multi-process data structure.
 
-SharedQueue is a lockfree queue with a fixed capacity, derived from the SharedApplication. Very easy to use.
+SharedQueue is a lockfree queue with fixed capacity, derived from the SharedApplication. Easy to use.
 
 ## Usage
 
