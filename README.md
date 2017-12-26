@@ -1,6 +1,6 @@
 # SharedApplication
 
-[Full Documentation](http://mhy12345.xyz/uncategorized/sharedapplication-linux-shared-memory-wrapper-in-c-lockfree-queue/)
+[Full Documentation](http://mhy12345.xyz/technology/sharedapplication-linux-shared-memory-wrapper-in-c-lockfree-queue/)
 
 ## Introduction
 
