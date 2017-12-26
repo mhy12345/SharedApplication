@@ -1,5 +1,7 @@
 # SharedApplication
 
+[Full Documentation](http://mhy12345.xyz/uncategorized/sharedapplication-linux-shared-memory-wrapper-in-c-lockfree-queue/)
+
 ## Introduction
 
 SharedApplication is a class used for sharing data between processes, and design to be derived by multi-process data structure.
@@ -8,16 +10,11 @@ SharedQueue is a lockfree queue with fixed capacity, derived from the SharedAppl
 
 ## Usage
 
-[SharedApplication](#jump1)
-
-[SharedQueue](#jump2)
-
 ### SharedApplication
-<span id="jump1"></span>
 
 Define a SharedApplication instance in the global namescope
 
-	SharedApplication sApp;
+	SharedApplication<APPKEY> sApp;
 
 At the begin of the main function, we can do some basic configuration:
 
@@ -44,7 +41,6 @@ In other program, you can also write the same code. And the contents in the memo
 
 
 ### SharedQueue
-<span id="jump2"></span>
 
 The SharedQueue is a private inherited form the SharedApplication, means you can just replace SharedApplication with SharedQueue.
 
@@ -60,7 +56,9 @@ In the main function, you can use...
 	sQueue::empty(T &val);
 
 ## Attention
+
 1. In the SharedApplication, make sure you alloc each memory block using the same order and size
+
 2. The destructive function must be called, otherwise the shared memory cannot be deleted.
 
 
